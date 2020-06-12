@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Gun Room
-  defaultCursor: {fileID: 2800000, guid: a35db48db9f3fff47b4b2a964bd805b3, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 90d56d412e606a74ba84054a3c8999e2, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
