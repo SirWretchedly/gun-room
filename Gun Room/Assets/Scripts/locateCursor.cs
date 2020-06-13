@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class locateCursor : MonoBehaviour
 {
-    public Vector3 playerPosition;
+    public Vector3 playerPosition, mousePosition;
     GameObject player;
     Animator playerAnimator;
     void Start()
@@ -16,13 +16,14 @@ public class locateCursor : MonoBehaviour
     {
         playerPosition = player.transform.position;
         playerPosition = Camera.main.WorldToScreenPoint(playerPosition);
-        if (Input.mousePosition.y > playerPosition.y)
+        mousePosition = Input.mousePosition;
+        if (mousePosition.y > playerPosition.y)
         {
-            if(Input.mousePosition.x < (playerPosition.x- Screen.width / 9))
+            if(mousePosition.x < (playerPosition.x- Screen.width / 9))
             {
                 playerAnimator.SetInteger("mousePosition", 1);
             }
-            else if(Input.mousePosition.x > (playerPosition.x + Screen.width / 9))
+            else if(mousePosition.x > (playerPosition.x + Screen.width / 9))
             {
                 playerAnimator.SetInteger("mousePosition", 3);
             }
@@ -33,11 +34,11 @@ public class locateCursor : MonoBehaviour
         }
         else
         {
-            if (Input.mousePosition.x < (playerPosition.x - Screen.width / 9))
+            if (mousePosition.x < (playerPosition.x - Screen.width / 9))
             {
                 playerAnimator.SetInteger("mousePosition", 4);
             }
-            else if (Input.mousePosition.x > (playerPosition.x + Screen.width / 9))
+            else if (mousePosition.x > (playerPosition.x + Screen.width / 9))
             {
                 playerAnimator.SetInteger("mousePosition", 6);
             }
