@@ -15,5 +15,7 @@ public class rotateGun : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle - 100));
         if (Input.mousePosition.y > Screen.height / 2)
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 9;
+        else
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 11;
     }
 }

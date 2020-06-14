@@ -368,6 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 816393966}
   - component: {fileID: 816393967}
+  - component: {fileID: 816393968}
   m_Layer: 23
   m_Name: Barrel
   m_TagString: Untagged
@@ -383,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816393965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1582619, y: -0.41315776, z: 0}
+  m_LocalPosition: {x: 0.1582619, y: -0.477, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1440598690}
@@ -404,6 +405,19 @@ MonoBehaviour:
   mousePosition: {x: 0, y: 0}
   bulletPosition: {x: 0, y: 0}
   bullet: {fileID: 885515156750692343, guid: 3531133544d9b0649a4909972c222a6b, type: 3}
+--- !u!114 &816393968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816393965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ae92c31ed72c6418039121d0d6b9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 1440598690}
 --- !u!1 &1440598689
 GameObject:
   m_ObjectHideFlags: 0
