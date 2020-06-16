@@ -15,6 +15,9 @@ public class fire : MonoBehaviour
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             currentBullet = Instantiate(bullet, transform.position, Quaternion.identity);
             currentBullet.GetComponent<bulletMove>().mousePosition = mousePosition;
+            gameObject.transform.parent.GetComponent<Animator>().SetBool("firing", true);
         }
+        else
+            gameObject.transform.parent.GetComponent<Animator>().SetBool("firing", false);
     }
 }

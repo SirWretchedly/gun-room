@@ -17,7 +17,7 @@ public class locateCursor : MonoBehaviour
         playerPosition = player.transform.position;
         playerPosition = Camera.main.WorldToScreenPoint(playerPosition);
         mousePosition = Input.mousePosition;
-        if (mousePosition.y > Screen.height / 2)
+        if (mousePosition.y > playerPosition.y)
         {
             if(mousePosition.x < (playerPosition.x- Screen.width / 6))
             {
@@ -29,7 +29,17 @@ public class locateCursor : MonoBehaviour
             }
             else
             {
-                playerAnimator.SetInteger("mousePosition", 2);
+                if(mousePosition.y > (playerPosition.y - Screen.height / 6) && mousePosition.y < (playerPosition.y + Screen.height / 6))
+                {
+                        if (mousePosition.x < (playerPosition.x - Screen.width / 18))
+                            playerAnimator.SetInteger("mousePosition", 1);
+                        else if (mousePosition.x > (playerPosition.x + Screen.width / 18))
+                            playerAnimator.SetInteger("mousePosition", 3);
+                        else
+                            playerAnimator.SetInteger("mousePosition", 2);
+                }
+                else
+                    playerAnimator.SetInteger("mousePosition", 2);
             }
         }
         else
@@ -44,7 +54,17 @@ public class locateCursor : MonoBehaviour
             }
             else
             {
-                playerAnimator.SetInteger("mousePosition", 5);
+                if (mousePosition.y > (playerPosition.y - Screen.height / 6) && mousePosition.y < (playerPosition.y + Screen.height / 6))
+                {
+                    if (mousePosition.x < (playerPosition.x - Screen.width / 18))
+                        playerAnimator.SetInteger("mousePosition", 4);
+                    else if (mousePosition.x > (playerPosition.x + Screen.width / 18))
+                        playerAnimator.SetInteger("mousePosition", 6);
+                    else
+                        playerAnimator.SetInteger("mousePosition", 5);
+                }
+                else
+                    playerAnimator.SetInteger("mousePosition", 5);
             }
         }
     }
