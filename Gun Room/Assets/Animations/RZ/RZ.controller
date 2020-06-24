@@ -31,7 +31,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4fd77a7d73632474d945fede4228765c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 994554683f00a2649b49812313997968, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -46,7 +46,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -96,7 +96,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 624556421d4280f41b09c919c35d141a, type: 2}
+  m_Motion: {fileID: 7400000, guid: ca40aee340751f44cadb7f8e8d0d8675, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -111,7 +111,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1984203332739956770}
@@ -136,7 +136,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3992881132350647428}
@@ -161,7 +161,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -189,7 +189,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -217,7 +217,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -245,7 +245,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -273,7 +273,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -301,7 +301,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4007882126898540656}
@@ -326,7 +326,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -354,7 +354,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -404,7 +404,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0ac812db01ef51e4382432406f3b65ea, type: 2}
+  m_Motion: {fileID: 7400000, guid: d5cd16d5444027341882b44bc9f42bad, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -419,7 +419,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -447,7 +447,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -475,7 +475,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -503,7 +503,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -531,7 +531,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -556,7 +556,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -584,7 +584,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -612,7 +612,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4964811124552782672}
@@ -637,7 +637,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -665,7 +665,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -693,7 +693,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4007882126898540656}
@@ -718,7 +718,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -746,7 +746,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -774,7 +774,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -802,7 +802,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -830,7 +830,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -858,7 +858,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -886,7 +886,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -914,7 +914,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -942,7 +942,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3992881132350647428}
@@ -967,7 +967,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -995,7 +995,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1023,7 +1023,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1051,7 +1051,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -1076,7 +1076,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1126,7 +1126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4a33f9d408fb0c746ac51919303c3aa0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 64d45889f43acad458384499454a842c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1141,7 +1141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1191,7 +1191,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1482346518448681681}
@@ -1216,7 +1216,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1258,7 +1258,7 @@ AnimatorStateMachine:
     m_Position: {x: 10, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3992881132350647428}
-    m_Position: {x: 220, y: -150, z: 0}
+    m_Position: {x: 210, y: -150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4964811124552782672}
     m_Position: {x: -210, y: -150, z: 0}
@@ -1321,7 +1321,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b4f70148058cb474c9ff6f687cca0488, type: 2}
+  m_Motion: {fileID: 7400000, guid: ad5ec4fab5aefd64c848513a892a5107, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1358,7 +1358,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0069526a4ec131a4b9150a920b85bbb5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 086c02839d588be43a6b2d22a2f35e69, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1373,7 +1373,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1401,7 +1401,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1452,7 +1452,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d97b071dd798d474a9767fd443ba3587, type: 2}
+  m_Motion: {fileID: 7400000, guid: b041b75d28ce66f4b8724229c62e3338, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1467,7 +1467,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1495,7 +1495,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1523,7 +1523,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1551,7 +1551,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1579,7 +1579,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4007882126898540656}
@@ -1604,7 +1604,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1632,7 +1632,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4007882126898540656}
@@ -1679,7 +1679,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9243f178c86e99e418841b1e7b295b02, type: 2}
+  m_Motion: {fileID: 7400000, guid: dc97bdcd28f2adb4b9b513b5ce9ef6c2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1694,7 +1694,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1722,7 +1722,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1750,7 +1750,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1778,7 +1778,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1806,7 +1806,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1834,7 +1834,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3992881132350647428}
@@ -1859,7 +1859,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1887,7 +1887,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1915,7 +1915,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1943,7 +1943,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -1971,7 +1971,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -1999,7 +1999,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2027,7 +2027,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2055,7 +2055,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2083,18 +2083,18 @@ AnimatorController:
   m_Name: RZ
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: mousePosition
+  - m_Name: playerPosition
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: moving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -2117,7 +2117,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1984203332739956770}
@@ -2142,7 +2142,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2170,7 +2170,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2220,7 +2220,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d3b9c24655ebdc54b9dc6ca6d907edf7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2217c225d9ebe4b498247b6fb246f9c6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2235,7 +2235,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2263,7 +2263,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2291,7 +2291,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2319,7 +2319,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1984203332739956770}
@@ -2344,7 +2344,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2372,7 +2372,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2400,7 +2400,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2428,7 +2428,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2456,7 +2456,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2484,7 +2484,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2512,7 +2512,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1984203332739956770}
@@ -2559,7 +2559,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2609,7 +2609,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 374539cbdf160bb4580ee90fd7b96e54, type: 2}
+  m_Motion: {fileID: 7400000, guid: 97ec536518dd9c04ba67474249a48677, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2624,7 +2624,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2652,7 +2652,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4964811124552782672}
@@ -2677,7 +2677,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -2705,7 +2705,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2733,7 +2733,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2761,7 +2761,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2789,7 +2789,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1482346518448681681}
@@ -2814,7 +2814,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4964811124552782672}
@@ -2839,7 +2839,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2867,7 +2867,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1984203332739956770}
@@ -2892,7 +2892,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2942,7 +2942,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2970,7 +2970,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -2998,7 +2998,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3026,7 +3026,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3054,7 +3054,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4964811124552782672}
@@ -3079,7 +3079,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3107,7 +3107,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3135,7 +3135,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3163,7 +3163,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3191,7 +3191,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -3238,7 +3238,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ad7ee278231d2f44780729cd85d53240, type: 2}
+  m_Motion: {fileID: 7400000, guid: ddb2ba7e73e30de459b3f01f69520a96, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3253,7 +3253,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3281,7 +3281,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3309,7 +3309,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3992881132350647428}
@@ -3334,7 +3334,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3362,7 +3362,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3390,7 +3390,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4964811124552782672}
@@ -3415,7 +3415,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3443,7 +3443,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3471,7 +3471,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3499,7 +3499,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3527,7 +3527,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3555,7 +3555,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1482346518448681681}
@@ -3602,7 +3602,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d52f6d6a121ea6e4f818caef6379c55f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8d718d4acc2eef14aa4919d4951a860b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -3617,7 +3617,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3645,7 +3645,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3673,7 +3673,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3992881132350647428}
@@ -3698,7 +3698,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3726,7 +3726,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1482346518448681681}
@@ -3754,7 +3754,7 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -3779,7 +3779,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3807,7 +3807,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3835,7 +3835,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -3866,7 +3866,7 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7453051596572299094}
@@ -3891,7 +3891,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3919,7 +3919,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -3947,7 +3947,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1482346518448681681}
@@ -3972,7 +3972,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -3997,7 +3997,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6706923074544180706}
@@ -4022,7 +4022,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -4050,7 +4050,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -4078,7 +4078,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 5
   - m_ConditionMode: 1
     m_ConditionEvent: moving
@@ -4106,7 +4106,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -4134,7 +4134,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -4162,7 +4162,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: moving
@@ -4190,7 +4190,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4007882126898540656}
@@ -4215,7 +4215,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: mousePosition
+    m_ConditionEvent: playerPosition
     m_EventTreshold: 2
   - m_ConditionMode: 2
     m_ConditionEvent: moving

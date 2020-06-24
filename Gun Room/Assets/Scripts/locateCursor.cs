@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class locateCursor : MonoBehaviour
 {
-    public Vector3 playerPosition, mousePosition;
-
-    private GameObject player;
-    private Animator playerAnimator, gunAnimator;
+    private Vector3 playerPosition, mousePosition;
+    private Animator playerAnimator;
 
     private void Start()
     {
-        player = GameObject.FindWithTag("Player");
-        playerAnimator = player.GetComponent<Animator>();
+        playerAnimator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
-        playerPosition = player.transform.position;
-        playerPosition = Camera.main.WorldToScreenPoint(playerPosition);
+        playerPosition = Camera.main.WorldToScreenPoint(transform.position);
         mousePosition = Input.mousePosition;
         if (mousePosition.y > playerPosition.y)
         {

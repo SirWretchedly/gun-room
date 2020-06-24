@@ -7,13 +7,14 @@ public class FollowPlayer : MonoBehaviour
     public float movementSpeed = 3;
 
     private GameObject player;
-    private Animator animator;
+    private Animator animator, status;
     private int trapped;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player");
         animator = gameObject.GetComponent<Animator>();
+        status = gameObject.transform.Find("Status").gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -22,11 +23,11 @@ public class FollowPlayer : MonoBehaviour
         {
             foreach (GameObject trap in GameObject.FindGameObjectsWithTag("Trap"))
             {
-                if (Vector3.Distance(transform.position, trap.transform.position) < 0.3)
+                if (Vector3.Distance(transform.position, trap.transform.position) < 0.5)
                 {
                     animator.SetBool("moving", false);
                     trap.GetComponent<SpriteRenderer>().sortingOrder = 11;
-                    gameObject.transform.Find("Status").gameObject.GetComponent<Animator>().SetBool("trapped", true);
+                    status.SetBool("trapped", true);
                     Destroy(trap);
                     trapped = 350;
                 }
@@ -38,7 +39,8 @@ public class FollowPlayer : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(transform.position, player.transform.position) > 1)
+            status.SetBool("trapped", false);
+            if (Vector3.Distance(transform.position, player.transform.position) > 0.5)
             {
                 transform.position = Vector3.MoveTowards(transform.position, player.transform.position, movementSpeed * Time.deltaTime);
                 animator.SetBool("moving", true);

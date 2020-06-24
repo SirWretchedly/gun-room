@@ -8,13 +8,14 @@ public class playerMovement : MonoBehaviour
     public float trapped = 0;
 
     private float horizontal, vertical, movementLimit = 0.7f;
-    private Animator playerAnimator;
+    private Animator animator, status;
     private Rigidbody2D body;
 
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        playerAnimator = GameObject.FindWithTag("Player").GetComponent<Animator>();
+        animator = GameObject.FindWithTag("Player").GetComponent<Animator>();
+        status = gameObject.transform.Find("Status").gameObject.GetComponent<Animator>();
     }
 
     private void Update()
@@ -26,9 +27,9 @@ public class playerMovement : MonoBehaviour
                 if (Vector3.Distance(transform.position, trap.transform.position) < 0.3)
                 { 
                     body.velocity = Vector3.zero;
-                    playerAnimator.SetBool("moving", false);
+                    animator.SetBool("moving", false);
                     trap.GetComponent<SpriteRenderer>().sortingOrder = 11;
-                    gameObject.transform.Find("Status").gameObject.GetComponent<Animator>().SetBool("trapped", true);
+                    status.SetBool("trapped", true);
                     Destroy(trap);
                     trapped = 350;
                 }
@@ -40,7 +41,7 @@ public class playerMovement : MonoBehaviour
         } 
         else
         {
-            gameObject.transform.Find("Status").gameObject.GetComponent<Animator>().SetBool("trapped", false);
+            status.SetBool("trapped", false);
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             if (horizontal != 0 && vertical != 0)
@@ -50,11 +51,11 @@ public class playerMovement : MonoBehaviour
             }
             if (horizontal != 0 || vertical != 0)
             {
-                playerAnimator.SetBool("moving", true);
+                animator.SetBool("moving", true);
             }
             else
             {
-                playerAnimator.SetBool("moving", false);
+                animator.SetBool("moving", false);
             }
             body.velocity = new Vector2(horizontal * movementSpeed, vertical * movementSpeed);
         }
