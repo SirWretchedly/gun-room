@@ -12,7 +12,7 @@ public class bulletMove : MonoBehaviour
         mousePosition = transform.position + (mousePosition - transform.position).normalized * 1000;
     }
 
-    void Update()
+    private void Update()
     {
         if (gameObject.tag == "Bullet")
         {

@@ -6,9 +6,10 @@ public class fire : MonoBehaviour
 {
     public Vector2 mousePosition, bulletPosition;
     public GameObject bullet;
-    GameObject currentBullet;
 
-    void Update()
+    private GameObject currentBullet;
+
+    private void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -18,6 +19,8 @@ public class fire : MonoBehaviour
             gameObject.transform.parent.GetComponent<Animator>().SetBool("firing", true);
         }
         else
+        {
             gameObject.transform.parent.GetComponent<Animator>().SetBool("firing", false);
+        } 
     }
 }

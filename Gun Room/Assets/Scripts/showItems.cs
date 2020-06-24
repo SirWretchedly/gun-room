@@ -5,42 +5,37 @@ using UnityEngine.UI;
 
 public class showItems : MonoBehaviour
 {
-    public Sprite blank, revolver, bearTrap;
-    GameObject player;
+    public Sprite[] image;
     public bool[] itemInBar = { false, false };
 
-    void Start()
+    private string[] itemID = { "Revolver", "BearTrap" };
+    private GameObject player;
+    private int n = 2;
+    
+    private void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
 
-    void Update()
+    private void Update()
     {
         foreach(Transform item in player.transform)
         {
-            if ((item.name == "Revolver" || item.name == "Revolver(Clone)") && itemInBar[0] == false)
+            
+            for (int i = 0; i < n; i++)
             {
-                foreach (Transform slot in transform)
+                if ((item.name == itemID[i] || item.name == itemID[i] + "(Clone)") && itemInBar[i] == false)
                 {
-                    if (slot.GetComponent<Image>().sprite == blank)
+                    foreach (Transform slot in transform)
                     {
-                        slot.GetComponent<item>().activeItem = "revolver";
-                        slot.GetComponent<Image>().sprite = revolver;
-                        itemInBar[0] = true;
-                        break;
-                    }
-                }
-            }
-            else if ((item.name == "BearTrap" || item.name == "BearTrap(Clone)") && itemInBar[1] == false)
-            {
-                foreach (Transform slot in transform)
-                {
-                    if (slot.GetComponent<Image>().sprite == blank)
-                    {
-                        itemInBar[1] = true;
-                        slot.GetComponent<item>().activeItem = "bearTrap";
-                        slot.GetComponent<Image>().sprite = bearTrap;
-                        break;
+                        ItemSlot itemSlot = slot.GetComponent<ItemSlot>();
+                        if (itemSlot.currentItem == null)
+                        {
+                            itemSlot.currentItem = item.gameObject;
+                            slot.GetComponent<Image>().sprite = image[i];
+                            itemInBar[i] = true;
+                            break;
+                        }
                     }
                 }
             }

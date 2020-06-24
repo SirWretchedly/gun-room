@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float movementSpeed = 5;
-    float horizontal, vertical, movementLimit = 0.7f, trapped = 0;
-    Animator playerAnimator;
-    Rigidbody2D body;
+    public float movementSpeed = 4;
+    public float trapped = 0;
 
-    void Start()
+    private float horizontal, vertical, movementLimit = 0.7f;
+    private Animator playerAnimator;
+    private Rigidbody2D body;
+
+    private void Start()
     {
         body = GetComponent<Rigidbody2D>();
         playerAnimator = GameObject.FindWithTag("Player").GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
-        GameObject triggeredTrap = null;
         if(GameObject.FindWithTag("Trap") != null)
         {
             foreach (GameObject trap in GameObject.FindGameObjectsWithTag("Trap"))
@@ -26,19 +27,20 @@ public class playerMovement : MonoBehaviour
                 { 
                     body.velocity = Vector3.zero;
                     playerAnimator.SetBool("moving", false);
-                    triggeredTrap = trap;
                     trap.GetComponent<SpriteRenderer>().sortingOrder = 11;
-                    trap.GetComponent<Animator>().SetBool("triggered", true);
-                    trapped = 500;
+                    gameObject.transform.Find("Status").gameObject.GetComponent<Animator>().SetBool("trapped", true);
+                    Destroy(trap);
+                    trapped = 350;
                 }
             }
         }
         if (trapped > 0)
+        {
             trapped--;
+        } 
         else
         {
-            if (triggeredTrap != null)
-                Destroy(triggeredTrap);
+            gameObject.transform.Find("Status").gameObject.GetComponent<Animator>().SetBool("trapped", false);
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             if (horizontal != 0 && vertical != 0)

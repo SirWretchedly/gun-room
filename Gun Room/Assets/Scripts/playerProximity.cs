@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class playerProximity : MonoBehaviour
 {
-    public GameObject trap;
-    GameObject player;
+    public GameObject item;
 
-    void Start()
+    private GameObject player;
+
+    private void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
 
-    void Update()
+    private void Update()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) < 1.3)
+        if (Vector3.Distance(player.transform.position, transform.position) < 2)
         {
             gameObject.GetComponent<Animator>().SetBool("proximity", true);
             if(Input.GetKeyDown("e"))
             {
-                Instantiate(trap, player.transform);
+                Instantiate(item, player.transform);
                 Destroy(gameObject);
             }
         }
         else
+        {
             gameObject.GetComponent<Animator>().SetBool("proximity", false);
+        }
     }
 }

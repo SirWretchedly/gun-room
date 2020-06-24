@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class set : MonoBehaviour
 {
-    public GameObject trap, blankItem;
-    GameObject inventory;
+    public GameObject trap;
     public Sprite blank;
+
+    private GameObject inventory;
+    Vector3 mousePosition;
 
     private void Start()
     {
@@ -16,24 +18,22 @@ public class set : MonoBehaviour
 
     private void Update()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += 10;
-        if (Input.GetMouseButtonDown(0) && Vector3.Distance(mousePosition, gameObject.transform.position + new Vector3(-0.4f, +0.2f, 0)) < 1.7)
+        if (Input.GetMouseButtonDown(0) && Vector3.Distance(mousePosition, gameObject.transform.position) < 1.7)
         {
-            Instantiate(trap, mousePosition + new Vector3(0.4f, -0.2f, 0), Quaternion.identity);
+            Instantiate(trap, mousePosition, Quaternion.identity);
             Destroy(gameObject);
             foreach(Transform slot in inventory.transform)
             {
-                if(slot.gameObject.GetComponent<item>().activeItem == "bearTrap")
+                ItemSlot itemSlot = slot.gameObject.GetComponent<ItemSlot>();
+                if (itemSlot.currentItem == gameObject)
                 {
-                    slot.gameObject.GetComponent<item>().activeItem = "blank";
+                    slot.gameObject.GetComponent<ItemSlot>().currentItem = null;
                     slot.gameObject.GetComponent<Image>().sprite = blank;
                     break;
                 }
             }
-            GameObject.Find("Item3").GetComponent<item3>().currentItem = blankItem;
-            GameObject.Find("Item2").GetComponent<item2>().currentItem = blankItem;
-            GameObject.Find("Item1").GetComponent<item1>().currentItem = blankItem;
             GameObject.Find("Bar").GetComponent<showItems>().itemInBar[1] = false;
         }  
     }

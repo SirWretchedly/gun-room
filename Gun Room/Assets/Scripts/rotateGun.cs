@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class rotateGun : MonoBehaviour
 {
-    Vector2 mousePosition, gunPosition;
-    SpriteRenderer gunSprite;
-    GameObject player;
-    float angle;
-    bool ok = true;
+    private Vector3 mousePosition, gunPosition, playerScreen;
+    private SpriteRenderer gunSprite;
+    private GameObject player;
+    private float angle;
+    private bool ok = true;
 
     private void Start()
     {
@@ -16,17 +16,21 @@ public class rotateGun : MonoBehaviour
         gunSprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         gunPosition = Camera.main.WorldToViewportPoint(transform.position);
         mousePosition = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
         angle = Mathf.Atan2(gunPosition.y - mousePosition.y, gunPosition.x - mousePosition.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle - 100));
-        Vector3 playerScreen = Camera.main.WorldToScreenPoint(player.transform.position);
+        playerScreen = Camera.main.WorldToScreenPoint(player.transform.position);
         if (Input.mousePosition.y > playerScreen.y)
+        {
             gunSprite.sortingOrder = 9;
+        }
         else
-            gunSprite.sortingOrder = 11;
+        {
+            gunSprite.sortingOrder = 13;
+        }   
         if (Input.mousePosition.x < playerScreen.x && ok)
         {
             gunSprite.flipX = true;
