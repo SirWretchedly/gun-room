@@ -7,7 +7,9 @@ public class TakeDamage : MonoBehaviour
     public float hp = 5;
 
     private Animator status;
-    private int damaged;
+    private int damaged = 0;
+    private GameObject bullet;
+    public bool killed = false;
 
     void Start()
     {
@@ -16,19 +18,6 @@ public class TakeDamage : MonoBehaviour
 
     void Update()
     {
-        if (GameObject.FindWithTag("Bullet") != null)
-        {
-            foreach (GameObject bullet in GameObject.FindGameObjectsWithTag("Trap"))
-            {
-                if (Vector3.Distance(transform.position, bullet.transform.position) < 0.2)
-                {
-                    status.SetBool("damaged", true);
-                    Destroy(bullet);
-                    damaged = 100;
-                    hp--;
-                }
-            }
-        }
         if(damaged > 0)
         {
             damaged--;
@@ -36,11 +25,33 @@ public class TakeDamage : MonoBehaviour
         else
         {
             status.SetBool("damaged", false);
+            if(killed == true)
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
-        if (hp <= 0)
+        if (hp <= 0 && killed == false)
         {
             status.SetBool("dead", true);
-            Destroy(gameObject);
+            killed = true;
+            gameObject.GetComponent<FollowPlayer>().enabled = false;
+            gameObject.GetComponent<Animator>().enabled = false;
+            gameObject.tag = "Corpse";
+            gameObject.layer = 22;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.gameObject.tag == "Bullet")
+        {
+            status.SetBool("damaged", true);
+            Destroy(collision.collider.gameObject);
+            damaged = 40;
+            hp--;
+        }
+
+    }
+
+
 }

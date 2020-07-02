@@ -8,6 +8,8 @@ TagManager:
   - Gun
   - Trap
   - RZ
+  - Corpse
+  - Grinder
   layers:
   - Default
   - TransparentFX

@@ -7,13 +7,14 @@ public class LocatePlayer : MonoBehaviour
     private Vector3 position, playerPosition;
     private GameObject player;
     private Animator animator;
-    private SpriteRenderer sprite;
+    private SpriteRenderer sprite, status;
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
         animator = gameObject.GetComponent<Animator>();
         sprite = gameObject.GetComponent<SpriteRenderer>();
+        status = gameObject.transform.Find("Status").GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -23,6 +24,7 @@ public class LocatePlayer : MonoBehaviour
         if (playerPosition.y > position.y)
         {
             sprite.sortingOrder = 15;
+            status.sortingOrder = 16;
             if (playerPosition.x < (position.x - Screen.width / 6))
             {
                 animator.SetInteger("playerPosition", 1);
@@ -55,6 +57,7 @@ public class LocatePlayer : MonoBehaviour
         else
         {
             sprite.sortingOrder = 8;
+            status.sortingOrder = 9;
             if (playerPosition.x < (position.x - Screen.width / 6))
             {
                 animator.SetInteger("playerPosition", 4);

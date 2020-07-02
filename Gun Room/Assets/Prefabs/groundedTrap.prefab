@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2211777227064916703}
   - component: {fileID: 8032460548819591681}
   - component: {fileID: 4906449194718488701}
+  - component: {fileID: -3753873405296071178}
   m_Layer: 0
   m_Name: groundedTrap
   m_TagString: Trap
@@ -116,3 +117,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3753873405296071178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237330892438821902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f815402caf05504ca653bfef6762eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.5

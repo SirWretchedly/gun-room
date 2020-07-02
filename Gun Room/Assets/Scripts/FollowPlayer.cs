@@ -5,11 +5,11 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public float movementSpeed = 3;
+    public int trapped = 0;
 
     private GameObject player;
     private Animator animator, status;
-    private int trapped;
-
+    
     void Start()
     {
         player = GameObject.FindWithTag("Player");
@@ -28,6 +28,7 @@ public class FollowPlayer : MonoBehaviour
                     animator.SetBool("moving", false);
                     trap.GetComponent<SpriteRenderer>().sortingOrder = 11;
                     status.SetBool("trapped", true);
+                    gameObject.GetComponent<TakeDamage>().hp--;
                     Destroy(trap);
                     trapped = 350;
                 }
